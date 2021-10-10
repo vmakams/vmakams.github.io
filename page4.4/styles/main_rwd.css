@@ -1,0 +1,308 @@
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-size: 100%;
+    border: 0.1875em solid black;
+    width:960px;
+  
+    
+  }
+  
+  
+  header {
+    background-image: linear-gradient(45deg, white 20%, orange 75%, black 100%);
+    padding: 0.9375em;
+    border-bottom: 0.125em solid black;
+  }
+  header img {
+    float: left;
+    padding-right: 0.9375em;
+  }
+  header h2 {
+    font-size: 250%;
+    
+  }
+  header h3 {
+    font-size: 150%;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  .description h3{
+    padding-left: 8.4em;
+  }
+  .description a{
+    padding-left: 9.6875em;
+    color: orange;
+  }
+  .description p{
+    padding-left: 9.6875em;
+  } 
+  aside {
+    width: 10em;
+    float:left;
+    margin: 0 1.875em 6.25em -1.875em;
+    line-height: 25%;
+  }
+  #nav_list ul li {
+    margin-bottom:.5em;
+    border: 0.1875em solid black;
+    list-style-type: none;
+    background-color: orange;
+    font-weight: bold;
+    text-align: left;
+    height: auto;
+    display:block;
+  }
+  #nav_list ul li a {
+    display:block;
+    color: black;
+    text-decoration: none;
+    padding: 0.75em 0.9375em 0.75em 0.3125em; 
+  }
+  #nav_list ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    position: relative;
+  }
+  #nav_menu ul ul {
+    display:none;
+    position:absolute;
+    top: 100%;
+  }
+  #nav_menu ul li a {
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: 11.125em;
+    padding: 1em 0;
+  }
+  #nav_menu ul li {
+    float: left;
+    padding-left: 0.625em;
+    border: 0.125em double black;
+    list-style-type: none;
+    background-color: black;
+  }
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu > ul::after {
+    content: "";
+    display:block;
+    clear:both;
+  }
+  #nav_menu ul li a.current {
+    color: orange;
+  }
+  #nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color: gray;
+  }
+  .tdbg {
+    background-color:#f5deb3;
+  }
+  
+  
+  footer {
+    
+    font-size: 90%;
+    border-top: 2px solid black;
+    padding: 0.9375em;
+    background-image: linear-gradient(45deg, black 5%, orange 55%, white 90%);
+  }
+  
+  footer p {
+        text-align: center;
+  }
+  
+  .description{
+    margin-top: 0.625em;
+    padding-right: 0.625em;
+  }
+  .description h2:first-child::first-letter{
+    font-size: 205%;
+  }
+  #nav_menu{
+    width: 100%;
+  }
+  @media screen and (max-width: 1000px) {
+    body, #nav_menu, #nav_menu ul li a{ 
+      width: 100%; 
+      display: block;/* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .description{
+      display: block;
+    }
+    #nav_menu ul li:hover > ul {
+      display:block;
+    }
+    #nav_menu ul {
+      margin: 0;
+      padding: 0;
+      list-style:none;
+      position: relative;
+    }
+    #nav_menu ul ul {
+      display:none;
+      position:absolute;
+      top: 100%;
+    }
+    #nav_menu ul li a {
+      display: block;
+      color:white;
+      text-decoration: none;
+      text-align: center;
+      width: 11.125em;
+      padding: 1em 0;
+    }
+    #nav_menu ul li {
+      float: left;
+      padding-left: 0.625em;
+      border: 0.125em double black;
+      list-style-type: none;
+      background-color: black;
+    }
+    #nav_menu ul li:hover > ul {
+      display:block;
+    }
+    #nav_menu > ul::after {
+      content: "";
+      display:block;
+      clear:both;
+    }
+    #nav_menu ul li a.current {
+      color: orange;
+    }
+    #nav_menu ul li a:hover, #nav_menu ul li a:focus{
+      background-color: gray;
+    }
+  }
+  @media screen and (max-width: 760px){
+    
+    body, #, #nav_menu ul li a{ 
+      width: 100%;
+      display: block;
+    }
+    .description{
+      display: block;
+      margin-top: 0.625em;
+    padding-right: 0.625em;
+    }
+    #nav_menu ul li:hover > ul {
+      display:block;
+    }
+    #nav_menu ul {
+      margin: 0;
+      padding: 0;
+      list-style:none;
+      position: relative;
+    }
+    #nav_menu ul ul {
+      display:none;
+      position:absolute;
+      top: 100%;
+    }
+    #nav_menu ul li a {
+      display: block;
+      color:white;
+      text-decoration: none;
+      text-align: center;
+      width: 11.125em;
+      padding: 1em 0;
+    }
+    #nav_menu ul li {
+      float: left;
+      padding-left: 0.625em;
+      border: 0.125em double black;
+      list-style-type: none;
+      background-color: black;
+    }
+    #nav_menu ul li:hover > ul {
+      display:block;
+    }
+    #nav_menu > ul::after {
+      content: "";
+      display:block;
+      clear:both;
+    }
+    #nav_menu ul li a.current {
+      color: orange;
+    }
+    #nav_menu ul li a:hover, #nav_menu ul li a:focus{
+      background-color: gray;
+    }
+  }
+  @media screen and (max-width: 576px){
+    
+    body, #nav_menu, #nav_menu ul li a { 
+      width: 100%;
+      display: block;
+      margin-top: 0.625em;
+    padding-right: 0.625em;
+
+    }
+.description{
+  display: block;
+  margin-top: 0.625em;
+    padding-right: 0.625em;
+}
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    position: relative;
+  }
+  #nav_menu ul ul {
+    display:none;
+    position:absolute;
+    top: 100%;
+  }
+  #nav_menu ul li a {
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: 11.125em;
+    padding: 1em 0;
+  }
+  #nav_menu ul li {
+    float: left;
+    padding-left: 0.625em;
+    border: 0.125em double black;
+    list-style-type: none;
+    background-color: black;
+  }
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu > ul::after {
+    content: "";
+    display:block;
+    clear:both;
+  }
+  #nav_menu ul li a.current {
+    color: orange;
+  }
+  #nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color: gray;
+  }
+    
+  }
