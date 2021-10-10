@@ -1,0 +1,224 @@
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-size: 100%;
+    border: 0.1875em solid black;
+    width:960px;
+  
+    
+  }
+  
+  
+  header {
+    background-image: linear-gradient(45deg, white 20%, orange 75%, black 100%);
+    padding: 0.9375em;
+    border-bottom: 0.125em solid black;
+  }
+  header img {
+    float: left;
+    padding-right: 0.9375em;
+  }
+  header h2 {
+    font-size: 250%;
+    
+  }
+  header h3 {
+    font-size: 150%;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  .description h3{
+    padding-left: 8.4em;
+  }
+  .description a{
+    padding-left: 9.6875em;
+    color: orange;
+  }
+  .description p{
+    padding-left: 9.6875em;
+  } 
+  aside {
+    width: 10em;
+    float:left;
+    margin: 0 1.875em 6.25em -1.875em;
+    line-height: 25%;
+  }
+  #nav_list ul li {
+    margin-bottom:.5em;
+    border: 0.1875em solid black;
+    list-style-type: none;
+    background-color: orange;
+    font-weight: bold;
+    text-align: left;
+    height: auto;
+    display:block;
+  }
+  #nav_list ul li a {
+    display:block;
+    color: black;
+    text-decoration: none;
+    padding: 0.75em 0.9375em 0.75em 0.3125em; 
+  }
+  #nav_list ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    position: relative;
+  }
+  #nav_menu ul ul {
+    display:none;
+    position:absolute;
+    top: 100%;
+  }
+  #nav_menu ul li a {
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: 11.125em;
+    padding: 1em 0;
+  }
+  #nav_menu ul li {
+    float: left;
+    padding-left: 0.625em;
+    border: 0.125em double black;
+    list-style-type: none;
+    background-color: black;
+  }
+  #nav_menu ul li:hover > ul {
+    display:block;
+  }
+  #nav_menu > ul::after {
+    content: "";
+    display:block;
+    clear:both;
+  }
+  #nav_menu ul li a.current {
+    color: orange;
+  }
+  #nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color: gray;
+  }
+  .tdbg {
+    background-color:#f5deb3;
+  }
+  
+  
+  footer {
+    
+    font-size: 90%;
+    border-top: 2px solid black;
+    padding: 0.9375em;
+    background-image: linear-gradient(45deg, black 5%, orange 55%, white 90%);
+  }
+  
+  footer p {
+        text-align: center;
+  }
+  
+  .description{
+    margin-top: 0.625em;
+    padding-right: 0.625em;
+  }
+  .description h2:first-child::first-letter{
+    font-size: 205%;
+  }
+  /* Disabling SlickNav menu on normal screen size */
+
+.slicknav_menu {
+
+  display: none;
+
+}
+
+
+/* Max-width for Headers */
+
+header {
+
+  min-width: 40px;
+
+}
+
+
+/* Comment : Media Query Added For screens with a maximum width of 800 pixels. */
+
+@media only screen and (max-width: 800px) {
+
+  html {
+
+      background: none;
+
+      font-size: 90%;
+
+  }
+
+  body {
+
+      box-shadow: none;
+
+      font-size: 90%;
+
+  }
+
+  header h3,
+
+  section h2:first-child:first-letter {
+
+      /* reducing Font Size For All Elements */
+
+      font-size: 90%;
+
+  }
+
+}
+
+
+/* Comment : Media Query Added For screens with a maximum width of 800 pixels. */
+
+@media only screen and (max-width: 767px) {
+
+  .js #menu {
+
+      display: none;
+
+  }
+
+  .js .slicknav_menu {
+
+      display: block;
+
+  }
+
+}
+
+
+/* Comment : Media Query applied to screens with a maximum width of 479 pixels */
+
+@media only screen and (max-width: 479px) {
+
+  header h3,
+
+  section h2:first-child:first-letter {
+
+      font-size: 80%;
+
+  }
+
+}
+  
+  
